@@ -7,7 +7,7 @@ const Footer = ({ social }) => {
       <div className="px-8 py-8 flex flex-col md:flex-row justify-between items-center">
         <Link href={'/about'}>
           <a>
-            &copy; {new Date().getFullYear() || "2022"} - <span className="hover:underline"></span>
+            &copy; {new Date().getFullYear() || "2022"}
           </a>
         </Link>
         <div className="flex space-x-6 md:space-x-8 py-4 md:py-0">

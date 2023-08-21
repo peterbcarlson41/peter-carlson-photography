@@ -9,7 +9,6 @@ import Title from "components/Title";
 import Contact from "components/Contact";
 import Footer from "components/Footer";
 
-
 const ABOUT_QUERY = `query AboutQuery {
   headline {
     title
@@ -52,18 +51,14 @@ const ABOUT_QUERY = `query AboutQuery {
 }
 `;
 
-
 const AboutPage = ({ data }) => (
   <Layout title="About">
     <Title headline={data.headline} />
-    <div className="flex flex-col justify-center items-center pt-24">
+    <div className="flex flex-col justify-center items-center pt-24 pb-5">
       <Image data={data.about.image.responsiveImage} />
       <caption>{data.about.title || "Photographix"} </caption>
 
-      <p className="py-16 max-w-md">
-        {data.about.text}
-      </p>
-
+      <p className="py-16 max-w-md">{data.about.text}</p>
     </div>
     <Contact calltoaction={data.calltoaction} />
     <Footer social={data.social} />
@@ -71,7 +66,6 @@ const AboutPage = ({ data }) => (
 );
 
 export const getStaticProps: GetStaticProps = async (context) => {
-
   const data = await request({
     query: ABOUT_QUERY,
   });
@@ -81,5 +75,5 @@ export const getStaticProps: GetStaticProps = async (context) => {
       data,
     },
   };
-}
+};
 export default AboutPage;

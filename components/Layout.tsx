@@ -39,9 +39,7 @@ const Layout = ({
       <meta name="msapplication-TileImage" content="/film-camera.png" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    {/* <Navbar /> */}
     {children}
-    {/* <Footer /> */}
   </div>
 );
 

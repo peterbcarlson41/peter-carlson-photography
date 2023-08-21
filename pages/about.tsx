@@ -56,8 +56,6 @@ const AboutPage = ({ data }) => (
     <Title headline={data.headline} />
     <div className="flex flex-col justify-center items-center pt-24">
       <Image data={data.about.image.responsiveImage} />
-      <caption className="pt-5">{data.about.title || "Photographix"} </caption>
-
       <p className="py-16 max-w-md">{data.about.text}</p>
     </div>
     <Contact calltoaction={data.calltoaction} />

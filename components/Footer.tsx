@@ -11,7 +11,7 @@ const Footer = ({ social }) => {
   return (
     <footer>
       <div className="px-8 py-8 flex flex-col md:flex-row justify-between items-center">
-        <Link href={"/about"}>
+        <Link legacyBehavior href={"/about"}>
           <a>
             &copy; {new Date().getFullYear() || "2022"} -{" "}
             <span className="hover:underline">Peter Carlson</span>
@@ -53,7 +53,7 @@ const Footer = ({ social }) => {
           )}
           {social.email && (
             <a
-              href={`mailto:${social?.email}`}
+              href={`https://mailto:${social?.email}`}
               className="hover:rotate-12 ease-in-out duration-200"
               aria-label="Email Button"
             >

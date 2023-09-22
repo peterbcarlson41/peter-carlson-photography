@@ -1,9 +1,8 @@
 {
   "name": "Peter Carlson Photography",
-  "description": "A portfolio site for a photographers.",
-  "previewImage": "https://github.com/lanasdev/photography-portfolio/blob/main/docs/photographix-demo.png",
-  "livePreviewUrl": "https://photographix.lanas.dev/",
-  "repo": "lanasdev/photography-portfolio:main",
+  "description": "My photography  portfolio.",
+  "livePreviewUrl": "https://peter-carlson-photography.vercel.app/",
+  "repo": "peterbcarlson41/peter-carlson-photography:main",
   "datocmsProjectId": "79377",
   "deploymentType": "static",
   "datocmsApiTokenEnvName": "NEXT_DATOCMS_API_TOKEN",
